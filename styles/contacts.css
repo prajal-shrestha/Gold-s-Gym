@@ -1,0 +1,47 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-secondary);
+  color: white;
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
+}
+
+.contacts__information {
+  display: flex;
+  align-items: center;
+}
+
+.contact-number::after {
+  content: " |";
+}
+/* .contact-email::before {
+  content: " ";
+} */
+
+.contact-icon {
+  width: 2rem;
+}
+
+.contacts__social {
+  display: flex;
+  align-items: center;
+}
+
+.social-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: fit-content; */
+}
+
+.social-frame {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-bg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
