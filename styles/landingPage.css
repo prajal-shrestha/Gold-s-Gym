@@ -1,0 +1,18 @@
+.legacy > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+}
+
+.legacy__content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+.legacy__info {
+  width: 100%;
+  max-width: 35rem;
+  text-align: justify;
+}
+
