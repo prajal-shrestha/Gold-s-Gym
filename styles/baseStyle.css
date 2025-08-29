@@ -42,8 +42,6 @@
 
 body {
   font-family: var(--font-base);
-  margin-left: 6.25rem;
-  margin-right: 6.25rem;
   font-size: var(--font-size-md);
   line-height: var(--line-height);
   background-color: var(--color-background);
