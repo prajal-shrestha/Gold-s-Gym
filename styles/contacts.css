@@ -6,6 +6,9 @@
   color: white;
   padding-top: var(--space-md);
   padding-bottom: var(--space-md);
+  width: 100%;
+  margin-left: -6.25rem;
+  margin-right: -6.25rem;
 }
 
 .contacts__information {
@@ -30,18 +33,12 @@
 }
 
 .social-frame {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: fit-content; */
-}
-
-.social-frame {
   width: 2rem;
   height: 2rem;
-  background-color: var(--color-bg);
+  background-color: var(--color-background);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.3125rem;
 }
