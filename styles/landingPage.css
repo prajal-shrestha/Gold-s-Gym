@@ -9,16 +9,31 @@
   display: flex;
   align-items: center;
   gap: var(--space-lg);
+  /* Center the content- auto margin + responsiveness */
+  width: 90%;
+  margin: 0 auto;
 }
+
+/* To create 50% area for each child of legacy__content */
+.legacy__video,
+.legacy__info {
+  flex: 1 1 50%;
+}
+
+.legacy__video > iframe {
+  width: 100%;
+  height: 20.625rem;
+}
+
 .legacy__info {
   width: 100%;
-  max-width: 35rem;
   text-align: justify;
 }
+
 .carousel {
   position: relative;
-  margin-inline: -6.25rem;
   width: 100vw;
+  overflow: hidden;
   margin-bottom: 1.875rem;
 }
 
