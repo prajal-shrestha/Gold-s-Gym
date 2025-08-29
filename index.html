@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="/styles/baseStyle.css" />
   </head>
   <body>
+     <!-- Placeholder for Contacts -->
+    <div id="contact-bar"></div>
+
+     <!-- Placeholder for Navigation Bar -->
+    <div id="nav-section"></div>
+
     <section class="carousel">
       <div class="carousel-track">
         <div class="slide active">
@@ -108,8 +114,6 @@
 
         <div class="legacy__video">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/R9Q13UJU7P0?si=nGA4CJZRJ387q8YM"
             title="YouTube video player"
             frameborder="0"
@@ -143,5 +147,22 @@
     </section>
     <!-- Script for Carousel - to be applied before the end of body tag -->
     <script src="/script/carousel/index.js"></script>
+
+    <!-- Script to load Contacts and Navigation-bar -->
+    <script>
+      // Load Navigation Bar
+      fetch("/components/nav-bar/index.html")
+        .then((res) => res.text())
+        .then(
+          (data) => (document.getElementById("nav-section").innerHTML = data)
+        );
+
+      // Load Contacts
+      fetch("/components/contact-bar/index.html")
+        .then((res) => res.text())
+        .then(
+          (data) => (document.getElementById("contact-bar").innerHTML = data)
+        );
+    </script>
   </body>
 </html>
