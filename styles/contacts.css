@@ -1,13 +1,18 @@
-.contacts {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Applied separate contact-bar section to apply margin */
+.contact-bar {
   background-color: var(--color-secondary);
   color: white;
   padding-top: var(--space-md);
   padding-bottom: var(--space-md);
+}
 
-  margin-inline: -6.25rem;
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Center the content */
+  width: 90%;
+  margin: 0 auto;
 }
 
 .contacts__information {
@@ -15,15 +20,13 @@
   align-items: center;
 }
 
-.contact-number::after {
-  content: " |";
-}
-/* .contact-email::before {
-  content: " ";
-} */
-
 .contact-icon {
   width: 1.5rem;
+}
+
+/* LinkedIn Icon */
+#linkedin-icon {
+  width: 1.3rem;
 }
 
 .contacts__social {
