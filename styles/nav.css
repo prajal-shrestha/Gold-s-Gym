@@ -1,3 +1,21 @@
+.nav-section {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* applied border under Navigation Bar */
+.nav-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 5px;
+  background: #01adf0;
+  transform: translateX(-2.5vw);
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -43,6 +61,8 @@
 .nav-list {
   display: flex;
 }
-.button {
+
+/* remove this as CSS for button is defined in basestyles */
+/* .button {
   padding-left: 0.3125rem;
-}
+} */
