@@ -19,6 +19,88 @@
     <link rel="stylesheet" href="/styles/baseStyle.css" />
   </head>
   <body>
+    <section class="carousel">
+      <div class="carousel-track">
+        <div class="slide active">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="/assets/images/landingPage/carousel/mobile/carousel1.jpg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="/assets/images/landingPage/carousel/desktop/carousel1.jpg"
+            />
+            <img
+              src="/assets/images/landingPage/carousel/desktop/carousel1.jpg"
+              alt="Image 1"
+            />
+          </picture>
+        </div>
+
+        <div class="slide">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="/assets/images/landingPage/carousel/mobile/carousel2.jpg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="/assets/images/landingPage/carousel/desktop/carousel2.jpg"
+            />
+            <img
+              src="/assets/images/landingPage/carousel/desktop/carousel2.jpg"
+              alt="Image 2"
+            />
+          </picture>
+        </div>
+
+        <div class="slide">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="/assets/images/landingPage/carousel/mobile/carousel3.jpg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="/assets/images/landingPage/carousel/desktop/carousel3.jpg"
+            />
+            <img
+              src="/assets/images/landingPage/carousel/desktop/carousel3.jpg"
+              alt="Image 3"
+            />
+          </picture>
+        </div>
+
+        <div class="slide">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="/assets/images/landingPage/carousel/mobile/carousel4.jpg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="/assets/images/landingPage/carousel/desktop/carousel4.jpg"
+            />
+            <img
+              src="/assets/images/landingPage/carousel/desktop/carousel4.jpg"
+              alt="Image 4"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
+    </section>
+
+    <section class="home">
+      <div class="home__secondary">
+        <h1>What Makes US Different Than Others</h1>
+      </div>
+    </section>
+
     <section class="legacy">
       <h1>Our Legacy</h1>
       <div class="legacy__content">
@@ -59,5 +141,7 @@
         </div>
       </div>
     </section>
+    <!-- Script for Carousel - to be applied before the end of body tag -->
+    <script src="/script/carousel/index.js"></script>
   </body>
 </html>
