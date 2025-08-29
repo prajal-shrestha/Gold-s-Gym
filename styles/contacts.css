@@ -6,9 +6,8 @@
   color: white;
   padding-top: var(--space-md);
   padding-bottom: var(--space-md);
-  width: 100%;
-  margin-left: -6.25rem;
-  margin-right: -6.25rem;
+
+  margin-inline: -6.25rem;
 }
 
 .contacts__information {
@@ -24,12 +23,13 @@
 } */
 
 .contact-icon {
-  width: 2rem;
+  width: 1.5rem;
 }
 
 .contacts__social {
   display: flex;
   align-items: center;
+  gap: 0.625rem;
 }
 
 .social-frame {
@@ -41,4 +41,7 @@
   justify-content: center;
   align-items: center;
   gap: 0.3125rem;
+}
+.social-frame > a {
+  height: 1.5rem;
 }
