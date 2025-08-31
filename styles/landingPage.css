@@ -73,9 +73,9 @@
   right: 10px;
 }
 
-.home {
+/* .home {
   width: 100%;
-}
+} */
 .homepage {
   display: flex;
   flex-direction: column;
@@ -175,6 +175,9 @@
 .heading {
   display: flex;
 }
+.course {
+  padding: 3.125rem 0;
+}
 .course__lead h2 {
   color: white;
 }
@@ -192,7 +195,7 @@
   color: white;
   text-align: center;
 }
-.option {
+/* .option {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,7 +204,7 @@
   color: black;
   text-align: center;
   margin-top: 1.5625rem;
-}
+} */
 
 /* Mobile screens */
 @media (max-width: 768px) {
